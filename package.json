@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test:node": "webpack && node -r source-map-support/register dist/main.js",
+    "test:mocha": "mocha-webpack --recursive -R dot \"src/**/*_spec.js\""
+  },
+  "devDependencies": {
+    "jsdom": "^12.0.0",
+    "mocha": "^5.2.0",
+    "mocha-webpack": "^2.0.0-beta.0",
+    "sinon": "^6.1.5",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.9"
+  }
+}
